@@ -10,42 +10,6 @@
       </tags>
   </entry>
   <entry>
-    <title>流氓软件的清除</title>
-    <url>/2023/05/03/21-50-28/</url>
-    <content><![CDATA[<h2 id="前言"><a class="markdownIt-Anchor" href="#前言"></a> 前言</h2>
-<p>  前几日偶然借用隔壁宿舍同学电脑，一上手，锁屏界面的「一刀999」复古金色大字便糊了我一脸，进到桌面，一地不出名的“推荐下载”软件，左下角的牛皮癣弹窗时不时还冒了出来，这让有些广告洁癖的我使用体验极差。<br />
-  一问电脑主人，他根本不知道有些软件是哪来的，这些软件看来是「流氓捆绑」行为的产物了，虽然我理解广告是免费软件为了生存而加的，但在用户不知情的情况下自行静默安装并乱弹广告，这完全是绑架用户电脑当作牛皮癣发放机使用的不要脸行为。<br />
-<img src="https://absurd4755.oss-cn-qingdao.aliyuncs.com/Await7955/image_25-tuya.webp" alt="用Win7系统虚拟机模拟用户环境" />  于是我就帮忙清理了清理，顺手记录一下流程。</p>
-<h2 id="正文"><a class="markdownIt-Anchor" href="#正文"></a> 正文</h2>
-<p>  这些流氓软件按照顽固程度大致可分为两种：无驱动保护的和有驱动保护的。</p>
-<h3 id="无驱动保护类的"><a class="markdownIt-Anchor" href="#无驱动保护类的"></a> 无驱动保护类的</h3>
-<p>  基本思路就是先用卸载软件把陌生软件清理一下，再用“<a href="https://blog.csdn.net/hfhbutn">四海一叶秋</a>”大佬开发的“<a href="https://free.lanzoux.com/b0cpu1guf">SoftCnKiller</a><sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>”扫描一遍就差不多了<br />
-  用市面上常见且靠谱的卸载软件就基本可以卸载干净，比如：Total Uninstaller，HiBit Uninstaller，Revo Uninstaller，Geek Uninstall，IObit Uninstaller等。</p>
-<p>我个人喜欢并推荐用<a href="http://www.hibitsoft.ir/Uninstaller.html">HiBit Uninstaller</a>:体积小，免费无广告，有官方便携版，扫描算法优秀，并且附带小工具都挺好用的。备用链接:<a href="https://boundaryjie-z.lanzout.com/iMZI10vtcfzi">蓝奏云链接</a></p>
-<p>1.首次打开时会弹窗，选择第一项“将应用程序设置和数据保存在Windows用户文件夹和注册表中”<br />
-<img src="https://absurd4755.oss-cn-qingdao.aliyuncs.com/Await7955/image_32-tuya.webp" alt="首次打开选择软件数据文件夹" />2.把“打开程序时检查更新”去勾，然后取消此界面<br />
-<img src="https://absurd4755.oss-cn-qingdao.aliyuncs.com/Await7955/image_27-tuya.webp" alt="打开程序时检查更新" />3.右上角设置一下中文<br />
-<img src="https://absurd4755.oss-cn-qingdao.aliyuncs.com/Await7955/Snipaste_2023-05-12_23-31-50-tuya.webp" alt="设置中文" />4.勾选要卸载的软件并启动卸载后，会先调用软件自带的卸载程序，注意甄别卸载选项，一步步卸载。(可能某些软件会有卸载失败的弹窗，重试三次还是弹窗就可以先跳过这个软件)<img src="https://absurd4755.oss-cn-qingdao.aliyuncs.com/Await7955/image_31-tuya.webp" alt="某壁纸软件的混淆选项" />5.上一步完成后启用高级扫描，检查扫描结果中是否有重要文件。<img src="https://absurd4755.oss-cn-qingdao.aliyuncs.com/Await7955/image_33-tuya.webp" alt="启用高级扫描" /><img src="https://absurd4755.oss-cn-qingdao.aliyuncs.com/Await7955/image_36-tuya.webp" alt="扫描结果检查" />6.使用SoftCnKiller收尾，先更新一下黑名单。<img src="https://absurd4755.oss-cn-qingdao.aliyuncs.com/Await7955/image_35-tuya.webp" alt="更新黑名单" />7.启动SoftCnKiller主程序自动扫描，全选，处理选中。<img src="https://absurd4755.oss-cn-qingdao.aliyuncs.com/Await7955/image_39-tuya.webp" alt="收尾工作" /></p>
-<h3 id="有驱动保护类的"><a class="markdownIt-Anchor" href="#有驱动保护类的"></a> 有驱动保护类的</h3>
-<p>  把无驱动保护的清理完成后，接下来就是流氓中的大流氓——驱动保护类流氓，一般这种流氓软件是各类顽固病毒或者杀毒软件(2345安全卫士等)。<br />
-  捆绑安装的软件安装目录可能没有反安装程序(病毒就更不用说了)，所以我当时清理同学电脑时用的是ARK工具或者进pe直接删除流氓软件文件夹，然后一个一个把驱动文件禁用，最后用<a href="https://weishi.360.cn/jijiuxiang/index.html">360系统急救箱 </a>强力模式+全盘扫描扫两遍，基本上可以解决。但人工寻找不仅效率低，而且很有可能有遗漏风险，于是“<a href="https://blog.csdn.net/hfhbutn">四海一叶秋</a>”大佬开发的“<a href="https://free.lanzoui.com/iBaxn0v3ke0j">ScanSrv</a><sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>”内置有黑名单，直接用它精确禁用服务。</p>
-<hr class="footnotes-sep" />
-<section class="footnotes">
-<ol class="footnotes-list">
-<li id="fn1" class="footnote-item"><p>官方作者发的使用视频：<a href="https://www.bilibili.com/video/BV1Rt4y1L79u/">SoftCnKiller的使用方法介绍及一些流氓软件残留的处理方法</a> <a href="#fnref1" class="footnote-backref">↩︎</a></p>
-</li>
-<li id="fn2" class="footnote-item"><p>官方作者发的使用视频：<a href="https://www.bilibili.com/video/BV1Ub4y1D7Yc/">ScanSrv服务管理工具，轻松解决各种木马驱动</a> <a href="#fnref2" class="footnote-backref">↩︎</a></p>
-</li>
-</ol>
-</section>
-]]></content>
-      <tags>
-        <tag>Windows</tag>
-        <tag>软件</tag>
-        <tag>流氓软件</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>浅谈Windows杀毒软件的推荐 (一)</title>
     <url>/2023/04/23/20-54-43/</url>
     <content><![CDATA[<h2 id="前言"><a class="markdownIt-Anchor" href="#前言"></a> 前言</h2>
@@ -195,9 +159,45 @@
 </section>
 ]]></content>
       <tags>
-        <tag>Windows</tag>
         <tag>安全</tag>
         <tag>杀毒软件</tag>
+        <tag>Windows</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>流氓软件的清除</title>
+    <url>/2023/05/03/21-50-28/</url>
+    <content><![CDATA[<h2 id="前言"><a class="markdownIt-Anchor" href="#前言"></a> 前言</h2>
+<p>  前几日偶然借用隔壁宿舍同学电脑，一上手，锁屏界面的「一刀999」复古金色大字便糊了我一脸，进到桌面，一地不出名的“推荐下载”软件，左下角的牛皮癣弹窗时不时还冒了出来，这让有些广告洁癖的我使用体验极差。<br />
+  一问电脑主人，他根本不知道有些软件是哪来的，这些软件看来是「流氓捆绑」行为的产物了，虽然我理解广告是免费软件为了生存而加的，但在用户不知情的情况下自行静默安装并乱弹广告，这完全是绑架用户电脑当作牛皮癣发放机使用的不要脸行为。<br />
+<img src="https://absurd4755.oss-cn-qingdao.aliyuncs.com/Await7955/image_25-tuya.webp" alt="用Win7系统虚拟机模拟用户环境" />  于是我就帮忙清理了清理，顺手记录一下流程。</p>
+<h2 id="正文"><a class="markdownIt-Anchor" href="#正文"></a> 正文</h2>
+<p>  这些流氓软件按照顽固程度大致可分为两种：无驱动保护的和有驱动保护的。</p>
+<h3 id="无驱动保护类的"><a class="markdownIt-Anchor" href="#无驱动保护类的"></a> 无驱动保护类的</h3>
+<p>  基本思路就是先用卸载软件把陌生软件清理一下，再用“<a href="https://blog.csdn.net/hfhbutn">四海一叶秋</a>”大佬开发的“<a href="https://free.lanzoux.com/b0cpu1guf">SoftCnKiller</a><sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>”扫描一遍就差不多了<br />
+  用市面上常见且靠谱的卸载软件就基本可以卸载干净，比如：Total Uninstaller，HiBit Uninstaller，Revo Uninstaller，Geek Uninstall，IObit Uninstaller等。</p>
+<p>我个人喜欢并推荐用<a href="http://www.hibitsoft.ir/Uninstaller.html">HiBit Uninstaller</a>:体积小，免费无广告，有官方便携版，扫描算法优秀，并且附带小工具都挺好用的。备用链接:<a href="https://boundaryjie-z.lanzout.com/iMZI10vtcfzi">蓝奏云链接</a></p>
+<p>1.首次打开时会弹窗，选择第一项“将应用程序设置和数据保存在Windows用户文件夹和注册表中”<br />
+<img src="https://absurd4755.oss-cn-qingdao.aliyuncs.com/Await7955/image_32-tuya.webp" alt="首次打开选择软件数据文件夹" />2.把“打开程序时检查更新”去勾，然后取消此界面<br />
+<img src="https://absurd4755.oss-cn-qingdao.aliyuncs.com/Await7955/image_27-tuya.webp" alt="打开程序时检查更新" />3.右上角设置一下中文<br />
+<img src="https://absurd4755.oss-cn-qingdao.aliyuncs.com/Await7955/Snipaste_2023-05-12_23-31-50-tuya.webp" alt="设置中文" />4.勾选要卸载的软件并启动卸载后，会先调用软件自带的卸载程序，注意甄别卸载选项，一步步卸载。(可能某些软件会有卸载失败的弹窗，重试三次还是弹窗就可以先跳过这个软件)<img src="https://absurd4755.oss-cn-qingdao.aliyuncs.com/Await7955/image_31-tuya.webp" alt="某壁纸软件的混淆选项" />5.上一步完成后启用高级扫描，检查扫描结果中是否有重要文件。<img src="https://absurd4755.oss-cn-qingdao.aliyuncs.com/Await7955/image_33-tuya.webp" alt="启用高级扫描" /><img src="https://absurd4755.oss-cn-qingdao.aliyuncs.com/Await7955/image_36-tuya.webp" alt="扫描结果检查" />6.使用SoftCnKiller收尾，先更新一下黑名单。<img src="https://absurd4755.oss-cn-qingdao.aliyuncs.com/Await7955/image_35-tuya.webp" alt="更新黑名单" />7.启动SoftCnKiller主程序自动扫描，全选，处理选中。<img src="https://absurd4755.oss-cn-qingdao.aliyuncs.com/Await7955/image_39-tuya.webp" alt="收尾工作" /></p>
+<h3 id="有驱动保护类的"><a class="markdownIt-Anchor" href="#有驱动保护类的"></a> 有驱动保护类的</h3>
+<p>  把无驱动保护的清理完成后，接下来就是流氓中的大流氓——驱动保护类流氓，一般这种流氓软件是各类顽固病毒或者杀毒软件(2345安全卫士等)。<br />
+  有些捆绑软件的安装目录里可能没有卸载程序(病毒就更不用说了)，所以我当时清理同学电脑时用的是ARK工具或者进pe直接删除流氓软件文件夹，然后一个一个把驱动文件禁用，最后用<a href="https://weishi.360.cn/jijiuxiang/index.html">360系统急救箱 </a>强力模式+全盘扫描扫两遍，基本上可以解决。但手动寻找不仅效率低，而且很有可能有遗漏风险，前两天我发现“<a href="https://blog.csdn.net/hfhbutn">四海一叶秋</a>”大佬还开发了“<a href="https://free.lanzoui.com/iBaxn0v3ke0j">ScanSrv</a><sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>”，软件内置有黑名单，进pe后直接用它精确禁用服务，省心省力。我喜欢用<a href="https://firpe.cn/page-247">FirPE</a>来搞，直接安装在系统里，可以联网，自带有清理程序。</p>
+<hr class="footnotes-sep" />
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>官方作者发的使用视频：<a href="https://www.bilibili.com/video/BV1Rt4y1L79u/">SoftCnKiller的使用方法介绍及一些流氓软件残留的处理方法</a> <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p>官方作者发的使用视频：<a href="https://www.bilibili.com/video/BV1Ub4y1D7Yc/">ScanSrv服务管理工具，轻松解决各种木马驱动</a> <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+]]></content>
+      <tags>
+        <tag>Windows</tag>
+        <tag>软件</tag>
+        <tag>流氓软件</tag>
       </tags>
   </entry>
 </search>

@@ -1,0 +1,6 @@
+CSS
+@font-face {
+  font-family: 'Notofont';
+  font-display: swap;
+  src: url('/fonts/NotoSerifSC-Regular.otf') format("OpenType");  
+}
